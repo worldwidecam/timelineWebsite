@@ -40,6 +40,20 @@ function createTimeline() {
     }
 }
 
+for (let i = 0; i <= numberOfMarkers; i++) {
+    const markerDate = new Date(startDate.getTime() + i * markerInterval)
+    const markerYear = markerDate.getFullYear();
+
+    const marker = document.createElement("div");
+    marker.classList.add("marker");
+    marker.textContent = markerYear;
+
+    // to calculate the relative positioning of the timeline markers
+    const markerPosition = (i / numberOfMarkers) * 100; // change this to set markers
+    marker.style.left = markerPosition + "%";
+
+    timeline.appendChild(marker);
+}
 // adding call function to populate the page
 newsArticles.forEach(createNewsArticle);
 createTimeline();

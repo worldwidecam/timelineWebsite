@@ -1,4 +1,8 @@
 /* style.css */
+h1 {
+    text-align: center;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -65,4 +69,21 @@ header {
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.timeline-container {
+    text-align:center;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
