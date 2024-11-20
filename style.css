@@ -1,0 +1,68 @@
+/* style.css */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.news-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.news-article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+}
+
+/* Style the timeline section */
+.timeline {
+    position: relative;
+    height: 2px;
+    background-color: #ccc;
+    width: 80%;
+    margin: 20px auto; /* i initially had margin-top */
+    /* i gotta remember to add some styling here */
+}
+
+.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    z-index: 1; /* trying to make arrows visible */
+}
+
+.left-arrow {
+    border-width: 10px 10px 10px 0;
+    border-color: transparent transparent transparent #ccc;
+    left: 0;
+    top: -9px;
+}
+
+.right-arrow {
+    border-width: 10px 0 10px 10px;
+    border-color: transparent #ccc transparent transparent;
+    right: 0;
+    top: -9px;
+}
+
+.marker {
+    position: absolute;
+    top: -10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
